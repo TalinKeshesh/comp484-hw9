@@ -46,13 +46,13 @@ const totalCost = subtotal + taxAmount;
 const roundedTotal = totalCost.toFixed(2);
 
 document.getElementById("math-result-1").textContent =
-    `Item price: $${itemPrice}`;
+    `Item price: $${itemPrice.toFixed(2)}`
 
 document.getElementById("math-result-2").textContent =
-    `Shipping cost: $${shippingCost} / Subtotal: $${subtotal.toFixed(2)}`;
+    `Shipping cost: $${shippingCost.toFixed(2)} / Subtotal: $${subtotal.toFixed(2)}`
 
 document.getElementById("math-result-3").textContent =
-    `Tax amount: $${taxAmount.toFixed(2)}`;
+    `Tax amount: $${taxAmount.toFixed(2)}`
 
 document.getElementById("math-result-4").textContent =
     `Total cost: $${roundedTotal}`;
